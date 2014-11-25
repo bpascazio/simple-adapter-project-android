@@ -31,9 +31,9 @@ public class ListingActivity extends Activity {
 
                 this,                                 // this is our activity
                 mealList,                             // this is our data
-                android.R.layout.simple_list_item_1,  // built in layout with one text item
-                new String[] {"dishname"},            // name in the hashmap
-                new int[] {android.R.id.text1}        // id of the textView in layout
+                R.layout.custom_list_layout,          // built in layout with one text item
+                new String[] {"dishname","calories"}, // name in the hashmap
+                new int[] {R.id.dishName, R.id.calorieCount} // id of the textView in layout
         );
 
         listview.setAdapter(adapter);
